@@ -1,11 +1,26 @@
-hr {
-    margin:2rem 0;
+/* SNES + Modern Color Palette */
+:root {
+    --snes-blue: #2c2f66;
+    --snes-light-blue: #6f8be8;
+    --snes-gold: #d9c27a;
+    --snes-gray: #c8c8c8;
+    --modern-bg: #f5f5f5;
+    --modern-shadow: rgba(0,0,0,0.25);
+}
+
+body {
+    background-image: url(bg5.png);
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 18px;
+    color: #bebbbb;
+    margin: 0;
+    padding: 0;
 }
 
 .portfolio-layout {
-    margin-top: 3rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 1rem;
 }
 
 .portfolio-columns {
@@ -14,40 +29,138 @@ hr {
 }
 
 .portfolio-column:first-child {
-    flex: 30;
+    flex: 0 0 30%;
 }
 
 .portfolio-column:last-child {
-    flex: 70;
+    flex: 0 0 70%;
 }
 
 .box {
-    border: 1px solid #000;
-    padding: 1rem;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(0 0 0 / 70%); 
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 12px var(--modern-shadow);
+}
+
+.border-img {
+    border: 12px solid transparent;
+    border-image: url(./border.png) 12 stretch;
+    border-image-width: 20px;
+}
+
+.bar {
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    min-width: 100px;
+
 }
 
 .photo-space {
     min-height: 240px;
-    height: 600px;
-}
-
-.intro-text {
-    min-height: 240px;
-    height: 750px;
 }
 
 .photo-details {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
 }
 
-.details-text {
-    height: 60px;
+.character-name {
+    margin: 0;
+    font-size: 24px;
+    color: var(--snes-light-blue);
+    text-shadow: 1px 1px #000;
+}
+
+.intro-text p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.stats ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.stats li {
+    color: var(--snes-gold);
+    text-shadow: 1px 1px #000;
+    margin-bottom: 0.3rem;
 }
 
 .full-width {
-    min-height: 240px;
     margin-top: 1rem;
 }
+
+h3 {
+    color: var(--snes-light-blue);
+    text-shadow: 1px 1px #000;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+summary {
+    cursor: pointer;
+    list-style-position: inside;
+}
+
+.section-title {
+    color: var(--snes-light-blue);
+    text-shadow: 1px 1px #000;
+    letter-spacing: 1px;
+}
+
+summary::marker {
+    color: var(--snes-gold);
+}
+
+summary:focus-visible {
+    outline: 2px solid var(--snes-gold);
+    outline-offset: 4px;
+}
+
+ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--snes-blue);
+    margin: 2rem 0;
+}
+
+.box:hover {
+    box-shadow:
+        0 0 50px #b2bbc0,          
+        -10px 0 10px rgb(85, 174, 206), 
+        10px 0 10px rgb(6, 86, 86);
+    transform: translateY(-2px);
+    transition: 0.15s ease-out;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.skill img {
+    width: 20px;
+    height: 20px;
+}
+
+.skill .bar {
+    width: 120px;
+    flex-shrink: 0;
+}
+
