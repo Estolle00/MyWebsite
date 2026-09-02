@@ -16,12 +16,12 @@
         <!-- Character Header -->
         <div class="portfolio-columns">
             <div class="portfolio-column">
-                <section class="box border-img photo-space" aria-label="Photo placeholder">
-
+                <section class="box photo-space">
                     <h1 class="character-name">Erik Stolle (Lv. 33)</h1>
+                    <img src="./assets/images/me.png" alt="Image of Erik" class="profile-photo">
                 </section>
 
-                <section class="box border-img stats">
+                <section class="box stats">
                     <h3>Stats</h3>
                     <ul>
                         <li>STR: 14</li>
@@ -34,7 +34,7 @@
             </div>
 
             <div class="portfolio-column">
-                <section class="box border-img intro-text">
+                <section class="box intro-text">
                     <p>
                         A curious technomancer specializing in data pipelines, full-stack spells, and automation enchantments.
                         Known for crafting reliable systems, thinking outside the box, and forging tools and relationships that make teams stronger.
@@ -58,59 +58,58 @@
         <hr>
 
         <!-- Skills -->
-<section class="box border-img full-width">
-    <h3>Primary Skills</h3>
+        <section class="box full-width">
+            <h3>Primary Skills</h3>
 
-    <div class="skills-grid">
-        <div class="skill">
-            <img src="./assets/icons/python.png" alt="Python">
-            <span>Python</span>
-            <img class="bar" src="./assets/icons/bar-python.png" alt="Python level">
-        </div>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="./assets/icons/python.png" alt="Python icon" class="skill-icon">
+                    <span class="skill-label">Python</span>
+                    <div class="eb-bar" style="--level: 0.7"></div>
+                </div>
 
-        <div class="skill">
-            <img src="./assets/icons/github.png" alt="GitHub">
-            <span>GitHub</span>
-            <img class="bar" src="./assets/icons/bar-pa.png" alt="GitHub level">
-        </div>
+                <div class="skill">
+                    <img src="./assets/icons/github.png" alt="GitHub icon" class="skill-icon">
+                    <span class="skill-label">Git</span>
+                    <div class="eb-bar" style="--level: 0.8"></div>
+                </div>
 
-        <div class="skill">
-            <img src="./assets/icons/react.png" alt="React">
-            <span>React</span>
-            <img class="bar" src="./assets/icons/bar-react.png" alt="React level">
-        </div>
+                <div class="skill">
+                    <img src="./assets/icons/react.png" alt="React icon" class="skill-icon">
+                    <span class="skill-label">React</span>
+                    <div class="eb-bar" style="--level: 0.6"></div>
+                </div>
 
-        <div class="skill">
-            <img src="./assets/icons/workato.png" alt="Workato">
-            <span>Workato</span>
-            <img class="bar" src="./assets/icons/bar-cs.png" alt="Workato level">
-        </div>
+                <div class="skill">
+                    <img src="./assets/icons/workato.png" alt="Workato icon" class="skill-icon">
+                    <span class="skill-label">Workato</span>
+                    <div class="eb-bar" style="--level: 0.75"></div>
+                </div>
 
-        <div class="skill">
-            <img src="./assets/icons/sql.png" alt="SQL">
-            <span>SQL</span>
-            <img class="bar" src="./assets/icons/bar-sql.png" alt="SQL level">
-        </div>
+                <div class="skill">
+                    <img src="./assets/icons/sql.png" alt="SQL icon" class="skill-icon">
+                    <span class="skill-label">SQL</span>
+                    <div class="eb-bar" style="--level: 0.80"></div>
+                </div>
 
-        <div class="skill">
-            <img src="./assets/icons/csharp.png" alt="C#">
-            <span>C#</span>
-            <img class="bar" src="./assets/icons/bar-cs.png" alt="C# level">
-        </div>
+                <div class="skill">
+                    <img src="./assets/icons/csharp.png" alt="C# icon" class="skill-icon">
+                    <span class="skill-label">C#</span>
+                    <div class="eb-bar" style="--level: 0.85"></div>
+                </div>
 
-        <div class="skill">
-            <img src="./assets/icons/powerapps.png" alt="Power Apps">
-            <span>Power Apps / Automate</span>
-            <img class="bar" src="./assets/icons/bar-pa.png" alt="Power Apps level">
-        </div>
-    </div>
-</section>
-
+                <div class="skill">
+                    <img src="./assets/icons/powerapps.png" alt="Power Apps icon" class="skill-icon">
+                    <span class="skill-label">Power Apps</span>
+                    <div class="eb-bar" style="--level: 1.0"></div>
+                </div>
+            </div>
+        </section>
 
         <!-- Strengths & Likes -->
         <div class="portfolio-columns">
             <div class="portfolio-column">
-                <section class="box border-img">
+                <section class="box flex-fill">
                     <h3>Strengths</h3>
                     <ul>
                         <li>Creative thinking</li>
@@ -119,82 +118,256 @@
                         <li>Loves helping others</li>
                         <li>Dependable</li>
                     </ul>
-                    <br>
                 </section>
             </div>
 
             <div class="portfolio-column">
-                <section class="box border-img">
+                <section class="box flex-fill">
                     <h3>Likes</h3>
                     <ul>
                         <li>Cooking</li>
                         <li>Traveling</li>
+                        <li>Spending time with wife and cats</li>
                         <li>Playing guitar</li>
                         <li>Working on new projects</li>
                         <li>Playing video games</li>
-                        <li>Spending time with wife and cats</li>
                     </ul>
                 </section>
             </div>
         </div>
 
         <!-- Experience -->
-        <details class="box border-img full-width" open>
-            <summary><span class="section-title" role="heading" aria-level="3">My Experience</span></summary>
-            <br>
-            <article class="job">
-                <h3>Full Stack &amp; Data Engineer &mdash; NCM Associates (2025&ndash;Present)</h3>
-                <ul>
-                    <li>Build and maintain secure data pipelines (Kafka, ETL/ELT) powering analytics and enterprise apps.</li>
-                    <li>Develop and support CI/CD workflows for data code, application components, and ML artifacts.</li>
-                    <li>Enhance and maintain a .NET/MVC/Blazor client portal with scalable front-end and back-end features.</li>
-                    <li>Own and improve internal Power Apps, increasing reliability and workflow efficiency.</li>
-                    <li>Collaborate with product owners, project architects, and internal/external clients to deliver features.</li>
-                </ul>
-            </article>
-            <br>
-            <article class="job">
-                <h3>IAM Application Developer II &mdash; 3M (2020&ndash;2025)</h3>
-                <ul>
-                    <li>Built Power Apps and Power Automate solutions supporting global identity and access management.</li>
-                    <li>Designed automated provisioning/deprovisioning workflows to streamline IAM operations.</li>
-                    <li>Led requirements sessions and mentored junior developers.</li>
-                    <li>Integrated IAM systems with SAP/IDM for enterprise role provisioning.</li>
-                </ul>
-            </article>
-            <br>
-            <article class="job">
-                <h3>Implementation Consultant &mdash; E2 Solutions (2019&ndash;2020)</h3>
-                <ul>
-                    <li>Designed database solutions for warehouse product systems.</li>
-                    <li>Developed .NET applications for high-volume data processing.</li>
-                    <li>Modernized SQL queries and optimized existing databases.</li>
-                    <li>Built an Android app enabling hands-free product scanning via Smart Glasses hardware.</li>
-                </ul>
-            </article>
-            <br>
-            <article class="job">
-                <h3>Software Engineer &mdash; Maverick Software Consulting (2016&ndash;2017)</h3>
-                <ul>
-                    <li>Developed automated QA tests for new product features.</li>
-                    <li>Managed DevOps workflows for test VM configuration and deployment.</li>
-                    <li>Created automation pipelines using Ansible and Jenkins.</li>
-                    <li>Wrote Python unit tests supporting continuous integration.</li>
-                </ul>
-            </article>
-        </details>
+        <div class="box eb-window">
+            <div class="eb-window-header">
+                <button class="eb-window-toggle">
+                    <img src="./assets/icons/arrow.png" alt="Arrow icon" class="icon">
+                </button>
+                <h3>My Experience</h3>
+            </div>
+            <div class="eb-window-content">
 
-        <!-- Portfolio -->
-        <details class="box border-img full-width" open>
-            <summary><span class="section-title" role="heading" aria-level="3">My Projects</span></summary>
-            <ul>
-                <li>CV Game</li>
-                <li>AC App (?)</li>
-                <li>Website</li>
-                <li>Game</li>
-            </ul>
-        </details>
+                <div class="spacer"></div>
+
+                <article class="job">
+                    <h3>Full Stack &amp; Data Engineer — NCM Associates (2025–Present)</h3>
+                    <ul>
+                        <li>Build and maintain secure data pipelines (Kafka, ETL/ELT) powering analytics and enterprise apps.</li>
+                        <li>Develop and support CI/CD workflows for data code, application components, and ML artifacts.</li>
+                        <li>Enhance and maintain a .NET/MVC/Blazor client portal with scalable front-end and back-end features.</li>
+                        <li>Own and improve internal Power Apps, increasing reliability and workflow efficiency.</li>
+                        <li>Collaborate with product owners, project architects, and internal/external clients to deliver features.</li>
+                    </ul>
+                </article>
+
+                <div class="spacer"></div>
+
+                <article class="job">
+                    <h3>IAM Application Developer II — 3M (2020–2025)</h3>
+                    <ul>
+                        <li>Built Power Apps and Power Automate solutions supporting global identity and access management.</li>
+                        <li>Designed automated provisioning/deprovisioning workflows to streamline IAM operations.</li>
+                        <li>Led requirements sessions and mentored junior developers.</li>
+                        <li>Integrated IAM systems with SAP/IDM for enterprise role provisioning.</li>
+                    </ul>
+                </article>
+
+                <div class="spacer"></div>
+
+                <article class="job">
+                    <h3>Implementation Consultant — E2 Solutions (2019–2020)</h3>
+                    <ul>
+                        <li>Designed database solutions for warehouse product systems.</li>
+                        <li>Developed .NET applications for high-volume data processing.</li>
+                        <li>Modernized SQL queries and optimized existing databases.</li>
+                        <li>Built an Android app enabling hands-free product scanning via Smart Glasses hardware.</li>
+                    </ul>
+                </article>
+
+                <div class="spacer"></div>
+
+                <article class="job">
+                    <h3>Software Engineer — Maverick Software Consulting (2016–2017)</h3>
+                    <ul>
+                        <li>Developed automated QA tests for new product features.</li>
+                        <li>Managed DevOps workflows for test VM configuration and deployment.</li>
+                        <li>Created automation pipelines using Ansible and Jenkins.</li>
+                        <li>Wrote Python unit tests supporting continuous integration.</li>
+                    </ul>
+                </article>
+
+                <div class="spacer"></div>
+
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="box eb-window">
+            <div class="eb-window-header">
+                <button class="eb-window-toggle">
+                    <img src="./assets/icons/arrow.png" alt="Arrow icon" class="icon">
+                </button>
+                <h3>My Projects</h3>
+            </div>
+            <div class="eb-window-content">
+
+                <div class="spacer"></div>
+
+                <article class="job project">
+                    <h3>Forge of the Night (C#/.NET)</h3>
+                    <h4><a href="https://github.com/Estolle00/ForgeGame" target="_blank">View on Github</a></h4>
+                        <p class="project-description">Okay - hear me out on this one. Does it look rough? Yes. Was WPF the right choice for a board game-like application? Probably not.
+                        This is here mostly for historical purposes, humble beginnings and all that. I made this early on in my schooling. It's a game based off of
+                        one of my favorite board games, "Dice Forge". I made a digital version, and added a twist of Castlevania themeing (one of my favorite video game series).
+                        I'm working on a new, fresh, modern version of this game, so keep an eye on the dev log if you're interested!
+                        </p>
+
+                    <div id="bsCarouselFG" class="bs-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/fg_1.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/fg_2.png">
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="spacer"></div>
+                <hr>
+
+                <article class="job project">
+                    <h3>Animal Crossing: New Leaf - Fish and Insect Database (Android App)</h3>
+                    <h4><a href="https://github.com/Estolle00/ACNL--Fish-and-Insect-DB" target="_blank">View on Github</a></h4>
+                    <div id="bsCarouselAC" class="bs-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/acnl_3.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/acnl_1.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/acnl_2.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-description">
+                        <p>This was an Android app I built and published to the Google Play Store a number of years back while I was still in school.
+                        This was a simple app for players of the game Animal Crossing: New Leaf. 
+                        It contained a database of all the fish and insects in the game, along with their availability, price, and other information.
+                        It's a pretty simple app and is a bit antiquated by today's standards, but I was very proud of the fact that it got published,
+                        and that I could actually see people from around the world downloading and using it.</p>
+                    </div>
+                </article>
+
+                <div class="spacer"></div>
+                <hr>
+
+                <article class="job project">
+                    <h3>Just Another Game (Godot Engine)</h3>
+                    <h4><a href="https://github.com/Estolle00/JustAnotherGame" target="_blank">View on Github</a></h4>
+                    <p class="project-description">I've always wanted to make a game of my own, and this was my first legitimate attempt at doing so. I tried a few other engines
+                         (Unity and Unreal in particular), but I liked Godot the best. This has been a fun challenge as it involves many programming aspects that I don't use
+                         in day to day work, like math functions for physics modeling, animations, and simple AI character behavior. The most difficult part, though, has been the art. I am not an artist.
+                         It's been a slow process, but I'm learning a lot along the way and hope to <i>finally</i> finish it one day.</p>
+                    
+                    <div id="bsCarouselJG" class="bs-carousel carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/game_1.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/game_2.png">
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+                <div class="spacer"></div>
+                <hr>
+
+                <article class="job">
+                    <h3>This website!</h3>
+                    <h4><a href="https://github.com/Estolle00/MyWebsite" target="_blank">View on Github</a></h4>
+                    <p>If you were dying to know how this website was built, now's your chance! This website was built using HTML, CSS, and JavaScript, and a tiny bit of Bootstrap for the image carousels. 
+                       I had always wanted to make a personal/portfolio website, and finally got around to doing it.
+                       I enjoy injecting a little bit of fun into designs, and this was the perfect place to do it.
+                       I hope you've enjoyed browsing it and have liked what you've seen!</p>
+                <div class="spacer"></div>
+
+            </div>
+        </div>
+
 
     </main>
+
+    <div class="image-lightbox" id="imageLightbox" hidden>
+        <button class="image-lightbox-close" type="button" aria-label="Close enlarged image">&times;</button>
+        <img class="image-lightbox-image" alt="">
+    </div>
+
+    <!-- Window Animation Script -->
+    <script>
+    document.querySelectorAll(".eb-window").forEach(windowEl => {
+        const toggle = windowEl.querySelector(".eb-window-toggle");
+        const content = windowEl.querySelector(".eb-window-content");
+
+        let isOpen = false;
+
+        toggle.addEventListener("click", () => {
+            const startHeight = content.getBoundingClientRect().height;
+            isOpen = !isOpen;
+            const endHeight = isOpen ? content.scrollHeight : 0;
+            content.style.height = startHeight + "px";
+
+            requestAnimationFrame(() => {
+                content.style.height = endHeight + "px";
+            });
+        });
+
+        content.addEventListener("transitionend", () => {
+            if (isOpen) {
+                content.style.height = "auto";
+            }
+        });
+    });
+    </script>
+
+    <!-- Carousel Image Lightbox Script -->
+    <script>
+    const lightbox = document.querySelector("#imageLightbox");
+    const lightboxImage = lightbox.querySelector(".image-lightbox-image");
+    const closeLightbox = () => {
+        lightbox.hidden = true;
+        document.body.classList.remove("lightbox-open");
+    };
+
+    document.querySelectorAll(".bs-carousel .carousel-item img").forEach(image => {
+        image.addEventListener("click", () => {
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt || "Enlarged carousel image";
+            lightbox.hidden = false;
+            document.body.classList.add("lightbox-open");
+        });
+    });
+
+    lightbox.querySelector(".image-lightbox-close").addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", event => {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && !lightbox.hidden) {
+            closeLightbox();
+        }
+    });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
