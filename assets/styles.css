@@ -129,7 +129,7 @@ a {
 .stats li {
     color: var(--text);
     text-shadow: 1px 1px #000;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.1rem;
 }
 
 .section-title {
